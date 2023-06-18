@@ -1,8 +1,8 @@
 import streamlit as st
 import requests
+import os
 
-# API_URL = 'http://127.0.0.1:8000/get-question-api/'
-API_URL ="http://aittages.pythonanywhere.com//get-question-api"
+API_URL = os.environ["API_URL"]
 
 def get_questions(text):
 
